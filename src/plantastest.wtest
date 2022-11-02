@@ -1,15 +1,26 @@
 import plantas.*
 describe "Test de Plantas"  {
 	
-	const menta1 = new Menta()
-	
+	const menta1 = new Menta(altura =1,anioObtencion=0,horasDeSolTolera=0)
+	const soja1 = new Soja (altura=0.6,anioObtencion=2009,horasDeSolTolera=7)
 	method initialize() {
-		menta1.valor(3)
+		menta1.daNuevasSemillas()
+		menta1.espacio()
+		soja1.horasDeSolTolera()
+		soja1.daNuevasSemillas()
+		soja1.espacio()
 	}
 	
 	test "Menta - test de ejemplo" {
-		assert.equals(3, menta1.valor())
+		assert.that( menta1.daNuevasSemillas())
+		assert.equals(1, menta1.espacio())
 
+	}
+	test"si tuviesemos una soja de 0.6 metros y de semilla de 2009 "{
+		assert.that( soja1.daNuevasSemillas())
+		assert.equals(1, soja1 .espacio())
+		assert.equals(0.3, soja1 .espacio())
+		
 	}
 	
 }

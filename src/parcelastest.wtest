@@ -1,2 +1,13 @@
 import parcelas.*
 
+describe "Test de parcelas "  {
+	
+	const parcela1= new Parcela (ancho =20 ,largo =1 ,horasDeSol=8,superficie=20,cantidadMaxima=4)
+	
+	method initialize() {
+		menta1.daNuevasSemillas()
+		menta1.espacio()
+		soja1.horasDeSolTolera()
+		soja1.daNuevasSemillas()
+		soja1.espacio()
+	}
