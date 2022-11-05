@@ -1,3 +1,6 @@
+/*
+ * Faltaron las parcelas ecologias2
+ */
 import plantas.*
 
 class Parcela {
