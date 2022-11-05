@@ -1,3 +1,6 @@
+/*
+ * Esta incompleta
+ */
 class Planta {
 	var property anioObtencion
 	var property altura

@@ -1,3 +1,6 @@
+/*
+ * Los test no pasan quedan en color amarillo
+ */
 import plantas.*
 describe "Test de Plantas"  {
 	
